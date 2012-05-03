@@ -7,7 +7,7 @@ Here are some of the goals I have for this project:
 1. Deploy to Dreamhost via Capistrano pulling from Git
 2. Get stable Rails app remotely + locally
 3. Upgrade gems as much as Dreamhost will allow
-4. Add staging server to Capistrano recipe
+4. <del>Add staging server to Capistrano recipe</del>
 
 ## Preflight Checklist
 
