@@ -7,10 +7,10 @@ AddHandler fcgid-script .fcgi
 
 Options +FollowSymLinks +ExecCGI
 
-#RewriteEngine On
+RewriteEngine On
 
-#RewriteCond %{REQUEST_FILENAME} !-f
-#RewriteRule ^(.*)$ dispatch.fcgi/$1 [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ dispatch.fcgi/$1 [QSA,L]
 
 ErrorDocument 404 /404.html
 ErrorDocument 422 /422.html

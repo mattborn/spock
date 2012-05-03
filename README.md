@@ -7,9 +7,17 @@ Bleeding edge Ruby on bleeding edge Rails on a fucking shared Dreamhost server! 
 Here are some of the goals I have for this project:
 
 1. <del>Deploy to Dreamhost via Capistrano pulling from Git</del>
-2. <del>Get stable Rails app remotely</del> + locally
+2. <del>Get stable Rails app remotely + locally</del>
 3. <del>Upgrade gems as much as Dreamhost will allow</del>
 4. <del>Add staging server to Capistrano recipe</del>
+
+Shit, well now what? Guess I need to add more things to do:
+
+5. Add Dreamhost Ruby upgrade tasks to recipe
+6. Add Dreamhost Rails upgrade tasks to recipe
+7. Write full documentation
+8. Make spock a gem
+9. Add support for other shared hosts
 
 ## Preflight Checklist
 
