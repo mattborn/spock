@@ -1,0 +1,1 @@
+server 'phantom.dreamhost.com', :app, :web, :primary => true
