@@ -15,6 +15,5 @@ ssh_options[:forward_agent] = true
 set :scm, :git
 set :repository, "ssh://git@github.com/#{user}/#{application}.git"
 set :branch, "master"
-set :deploy_to, "/home/#{user}/#{application}"
-set :deploy_via, :remote_cache
-set :deploy_env, 'production'
+
+server 'phantom.dreamhost.com', :app, :web, :primary => true
