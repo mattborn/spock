@@ -5,7 +5,7 @@
 Here are some of the goals I have for this project:
 
 1. <del>Deploy to Dreamhost via Capistrano pulling from Git</del>
-2. Get stable Rails app remotely + <del>locally</del>
+2. <del>Get stable Rails app remotely + locally</del>
 3. Upgrade gems as much as Dreamhost will allow
 4. <del>Add staging server to Capistrano recipe</del>
 
@@ -24,4 +24,12 @@ According to the [Capistrano docs](https://github.com/capistrano/capistrano/wiki
 
 ~~~
 rails _3.0.3_ new spock 
+~~~
+
+## Success!!!
+
+Holy shit, I did it! I simply added the htaccess and dispatch files manually after the deploy and she worked! Now I just need to clean up my recipe since I'm not sure about a few things + we should be set to explore how to "upgrade."
+
+~~~
+chmod 755 dispatch.fcgi
 ~~~

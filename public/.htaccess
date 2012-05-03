@@ -1,0 +1,17 @@
+<IfModule mod_fastcgi.c>
+AddHandler fastcgi-script .fcgi
+</IfModule>
+<IfModule mod_fcgid.c>
+AddHandler fcgid-script .fcgi
+</IfModule>
+
+Options +FollowSymLinks +ExecCGI
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ dispatch.fcgi/$1 [QSA,L]
+
+ErrorDocument 404 /404.html
+ErrorDocument 422 /422.html
+ErrorDocument 500 /500.html
