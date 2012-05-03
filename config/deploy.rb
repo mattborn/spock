@@ -8,6 +8,8 @@ require 'capistrano/ext/multistage'
 default_run_options[:pty] = false
 ssh_options[:forward_agent] = true
 
+set :user, "matthewborn"
+
 set :application, "spock"
 set :scm, :git
 set :repository, "ssh://git@github.com/#{user}/#{application}.git"

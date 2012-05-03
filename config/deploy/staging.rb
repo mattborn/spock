@@ -1,4 +1,3 @@
-set :user, "matthewborn"
 set :use_sudo, false
 
 set :deploy_to, "/home/#{user}/beta.#{application}"

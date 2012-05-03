@@ -1,6 +1,5 @@
 # Duplicated information in case this changes to another host
 
-set :user, "matthewborn"
 set :use_sudo, false
 
 set :deploy_to, "/home/#{user}/#{application}"
