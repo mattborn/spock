@@ -4,8 +4,8 @@
 
 Here are some of the goals I have for this project:
 
-1. Deploy to Dreamhost via Capistrano pulling from Git
-2. Get stable Rails app remotely + locally
+1. <del>Deploy to Dreamhost via Capistrano pulling from Git</del>
+2. Get stable Rails app remotely + <del>locally</del>
 3. Upgrade gems as much as Dreamhost will allow
 4. <del>Add staging server to Capistrano recipe</del>
 
@@ -19,3 +19,9 @@ According to the [Capistrano docs](https://github.com/capistrano/capistrano/wiki
 - Passenger application layer (prefer Unicorn)
 - Git source control (even though Dreamhost prefers svn)
 - Rails 3.0.3 (prefer 3.2.2)
+
+## Install Rails 3.0.3 Locally
+
+~~~
+rails _3.0.3_ new spock 
+~~~
